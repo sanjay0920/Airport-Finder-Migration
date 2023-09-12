@@ -6,6 +6,7 @@ namespace airport_finder.Services
     {
         void Add(AirportInfo Info);
         List<AirportInfo> Get();
+        List<AirportInfo> GetAirportsByState(string id);
 
     }
 }

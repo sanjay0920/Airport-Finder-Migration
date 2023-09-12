@@ -43,10 +43,10 @@ namespace airport_finder.Controllers
             var cityList = _cityService.Get().AsEnumerable();
 
             string From = Convert.ToString(form["source"]);
-            CityInfo city1 = cityList.FirstOrDefault(m => m.City == From);
+            CityInfo? city1 = cityList.FirstOrDefault(m => m.City == From);
             var startlocation = new Location(city1.Lat, city1.Long);
             string To = Convert.ToString(form["destination"]);
-            CityInfo city2 = cityList.FirstOrDefault(m => m.City == To);
+            CityInfo? city2 = cityList.FirstOrDefault(m => m.City == To);
 
 
             var destinationlocation = new Location(city2.Lat, city2.Long);
