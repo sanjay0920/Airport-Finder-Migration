@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 namespace Testing
 {
     public class AirportFinderTests
-    {
+    { 
         private readonly Mock<IAirportService> _airportService;
 
         private readonly Mock<ICityService> _cityService;
